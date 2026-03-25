@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EJS Example</title>
+</head>
+<body>
+    <h1>hi</h1>
+
+  <h1>Hello <%= user %> 👋</h1>
+
+  <h2>Your Skills:</h2>
+  <ul>
+    <% skills.forEach(skill => { %>
+      <li><%= skill %></li>
+    <% }) %>
+  </ul>
+
+</body>
+</html>

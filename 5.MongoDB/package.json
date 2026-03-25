@@ -1,0 +1,15 @@
+{
+  "name": "5.mongodb",
+  "module": "app.js",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "mongoose": "^9.3.2"
+  }
+}

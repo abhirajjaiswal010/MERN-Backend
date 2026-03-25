@@ -1,0 +1,21 @@
+🔹 Create
+create
+save
+🔹 Read
+find
+findOne
+findById
+🔹 Update
+updateOne
+updateMany
+findByIdAndUpdate
+findOneAndUpdate
+🔹 Delete
+deleteOne
+deleteMany
+findByIdAndDelete
+🔹 Extra
+countDocuments
+sort
+limit
+select
