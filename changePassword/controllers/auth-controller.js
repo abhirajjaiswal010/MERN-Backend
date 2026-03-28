@@ -100,13 +100,13 @@ export const loginUser = async (req, res) => {
 // ================= CHANGE PASSWORD =================
 export const changePassword = async (req, res) => {
   try {
-    // 🔐 from authMiddleware
-    // if (!req.userInfo || !req.userInfo.userId) {
-    //   return res.status(401).json({
-    //     success: false,
-    //     message: "Unauthorized",
-    //   });
-    // }
+    // ✅ safety check
+    if (!req.userInfo || !req.userInfo.id) {
+      return res.status(401).json({
+        success: false,
+        message: "Unauthorized",
+      });
+    }
 
     const userId = req.userInfo.id;
     const { oldPassword, newPassword } = req.body;
